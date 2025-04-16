@@ -377,7 +377,7 @@ function Index() {
                     <div className="hidden xl:block absolute left-1/2 -translate-x-1/2 transform bg-yellow-400 z-30 opacity-60"
                         style={{ width: "1px", height: "8rem", bottom: "39rem" }}></div>
 
-                    <div className="w-11/12 relative z-20 text-center mx-auto text-black">
+                     <div className="w-11/12 relative z-20 text-center mx-auto text-black">
                         <p
                             className="m-0 text-6xl font-bold text-center"
                             style={{ fontFamily: 'quadon', fontWeight: 400 }}>Resources and Initiatives</p>
@@ -400,7 +400,7 @@ function Index() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='w-full bg-white mb-10 lg:mb-0'>
+                            {/*<div className='w-full bg-white mb-10 lg:mb-0'>
                                 <div className='relative'>
                                     <img className='w-full' src={r3} alt="AI & Cardiometabolic Health Capacity/Readiness Survey" />
                                     <div className='absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white'>
@@ -416,27 +416,27 @@ function Index() {
                                         <p className='text-lg'>Three Sisters Market Co-op</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div>*/}
                         </div>
 
-                    </div>
+                    </div> 
 
                 </div>
 
-                <div className='p-6 lg:px-20 lg:py-20 relative overflow-hidden' style={{ background: "#4aa1d4" }}>
+                <div className='p-6 lg:px-20 lg:py-20 relative overflow-hidden' style={{ background: "white" }}>
                     <img id="bg3" className="absolute w-full h-full left-40 top-0 z-10 opacity-5 object-cover"
                         src={bg2} />
                     <div className='lg:flex items-center relative z-20 lg:top-0 top-4'>
                         <div className='lg:w-6/12 lg:px-10'>
-                            <p className='font-bold text-3xl'>{data.main.regionThree.titlePrimary}</p>
-                            <p className='mt-4 text-md'>{data.main.regionThree.titleSecondary}</p>
+                            <p className='font-bold text-3xl' style={{ color: "#4aa1d4" }}>{data.main.regionThree.titlePrimary}</p>
+                            <p className='mt-4 text-md' style={{ color: "#333" }}>{data.main.regionThree.titleSecondary}</p>
                             <div
                                 onClick={_ => window.open(data.main.regionThree.joinNowLink)}
-                                className='lg:mb-0 mb-4 w-44 mt-4 btn bg-white p-3 flex justify-center items-center hover:bg-yellow-400 cursor-pointer transition-all'
-                                style={{ color: "#4aa1d4" }}>
+                                className='lg:mb-0 mb-4 w-44 mt-4 btn bg-blue-500 p-3 flex justify-center items-center hover:bg-yellow-400 cursor-pointer transition-all text-white'
+                                style={{ backgroundColor: "#4aa1d4" }}>
                                 {data.main.regionThree.buttonText}
 
-                                <span className='ml-2 transition-all text-yellow-400'>→</span>
+                                <span className='ml-2 transition-all'>→</span>
                             </div>
                         </div>
                         <div className='lg:w-6/12 lg:mb-0 mb-6'>
@@ -446,27 +446,6 @@ function Index() {
                 </div>
 
 
-                <div className='lg:px-20 lg:py-10 p-4 relative overflow-hidden' style={{ background: "white" }}>
-                    <div className='text-center'>
-                        <p className='text-5xl font-bold' style={{ color: "#2e271f" }}>{data.main.regionFour.titlePrimary}</p>
-                        <p className='mt-4 text-xl text-black'>{data.main.regionFour.titleSecondary}</p>
-                        {/* <div
-                            onClick={() => {
-                                const email = data.main.regionFour.email;
-                                const mailtoLink = `mailto:${email.address}?subject=${encodeURIComponent(email.subject)}&body=${encodeURIComponent(email.body.greeting + "\n\n" + email.body.content + "\n\n" + email.body.closing)}`;
-                                window.open(mailtoLink);
-                            }} className='w-44 mx-auto mt-8 btn2 p-3 flex justify-center items-center cursor-pointer transition-all'
-                            style={{ backgroundColor: "#4aa1d4" }}
-                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#1e3a8a"} // blue-900
-                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "#4aa1d4"} // #4aa1d4
-                        >
-
-                            {data.main.regionFour.buttonText}
-
-                            <span className='ml-2 transition-all text-white'>→</span>
-                        </div> */}
-                    </div>
-                </div>
 
             </main>
 
@@ -476,3 +455,5 @@ function Index() {
 }
 
 export default Index;
+
+
