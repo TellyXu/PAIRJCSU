@@ -74,10 +74,10 @@
             "buttonText": "Contact Us Now",
             "email": {
                 "address": "test@test.edu",
-                "subject": "Sample Lab Name Webpage - Contact Request",
+                "subject": "AI for Precision Cardiometabolic Health Lab - Contact Request",
                 "body": {
-                    "greeting": "Dear Dr. [PI Name],",
-                    "content": "I am interested in contacting you to learn more about your Sample Lab Name.",
+                    "greeting": "Dear Dr. Debra Terrell,",
+                    "content": "I am interested in contacting you to learn more about your AI for Precision Cardiometabolic Health Lab.",
                     "closing": "Best regards,"
                 }
             }
