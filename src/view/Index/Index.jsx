@@ -332,45 +332,7 @@ function Index() {
                                     <div className='flex flex-wrap gap-2'>
                                         {}
 
-
-
-                                            <div
-                                                className='w-48 rounded-md btn bg-white p-4 flex justify-center items-center hover:bg-yellow-400 cursor-pointer transition-all'
-                                                onClick={_ => window.open(data.main.regionOne.right.GoogleScholarLink)}
-                                                style={{
-                                                    color: "#4aa1d4",
-                                                    fontFamily: 'gentona',
-                                                    fontWeight: 600,
-                                                    fontSize: '18px'
-                                                }}>
-
-                                                <img src={googlescholar} alt="Google Scholar Icon"
-                                                     className="w-36 left-0 object-contain" />
-
-                                                <span className='ml-2 transition-all text-yellow-400'>→</span>
-                                            </div>
-
-
-                                        {data.main.regionOne.right.showLinkedinBtn &&(<div
-                                            className='w-48 rounded-md btn bg-white p-4 flex justify-center items-center hover:bg-yellow-400 cursor-pointer transition-all'
-                                            onClick={_ => window.open(data.main.regionOne.right.XLink)}
-                                            style={{
-                                                color: "#4aa1d4",
-                                                fontFamily: 'gentona',
-                                                fontWeight: 600,
-                                                fontSize: '18px'
-                                            }}>
-
-                                            <img src={socialmedia1textIcon2} alt="Google Scholar Icon"
-                                                className="w-4 left-0 object-contain" />
-
-                                            <p className={'ml-3'}>X(twitter)</p>
-
-                                            <span className='ml-2 transition-all text-yellow-400'>→</span>
-                                        </div>)}
-
-
-                                        {data.main.regionOne.right.showXBtn &&(<div
+                                        {data.main.regionOne.right.showLinkedinBtn && false &&(<div
                                             className='w-48 rounded-md  btn bg-white p-4 flex justify-center items-center hover:bg-yellow-400 cursor-pointer transition-all'
                                             onClick={_ => window.open(data.main.regionOne.right.LinkedinLink)}
                                             style={{
@@ -488,7 +450,7 @@ function Index() {
                     <div className='text-center'>
                         <p className='text-5xl font-bold' style={{ color: "#2e271f" }}>{data.main.regionFour.titlePrimary}</p>
                         <p className='mt-4 text-xl text-black'>{data.main.regionFour.titleSecondary}</p>
-                        <div
+                        {/* <div
                             onClick={() => {
                                 const email = data.main.regionFour.email;
                                 const mailtoLink = `mailto:${email.address}?subject=${encodeURIComponent(email.subject)}&body=${encodeURIComponent(email.body.greeting + "\n\n" + email.body.content + "\n\n" + email.body.closing)}`;
@@ -502,7 +464,7 @@ function Index() {
                             {data.main.regionFour.buttonText}
 
                             <span className='ml-2 transition-all text-white'>→</span>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
